@@ -1,8 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() {
+  'use strict';
+
   const opacity = document.querySelectorAll('.sidebar__icon_opacity'),
         sideLink = document.querySelectorAll('.sidebar__link'),
-        sideLinkA = document.querySelectorAll('.sidebar__link a');
+        searchBtn = document.querySelector('[data-search_btn'),
+        searchBar = document.querySelector('[data-search_bar]'),
+        searchLine = document.querySelector('[data-search_line]');
 
+// Sidebar active + hover animation
   sideLink.forEach((item, i) => {
     item.addEventListener('mouseover', () => {
       opacity[i].style.opacity = '1';
@@ -25,4 +30,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
   
+//toggle searchbar
+  searchBtn.addEventListener('click', () => {
+    if (searchBar.hasAttribute('disabled')) {
+      searchBar.removeAttribute('disabled');
+      searchLine.style.transform = 'translatex(0%)';
+    } else {
+      searchBar.setAttribute('disabled', true);
+      searchBar.value = '';
+      searchLine.style.transform = 'translatex(100%)';
+    }
+  });
+
+
 });

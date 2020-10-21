@@ -1,0 +1,87 @@
+.header
+    display: flex
+    justify-content: space-between
+    height: 44px
+    align-items: center
+    &__main
+        display: flex
+        justify-content: space-between
+        width: calc( 100% - 200px )
+        padding-right: 32px
+    &__buttons
+        display: flex
+        justify-content: flex-end
+    &__account
+        display: flex
+        justify-content: space-between
+        width: 200px
+        padding-left: 32px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            background-color: #DFE0EB
+            right: 100%
+            width: 1px
+            height: 32px
+            top: 50%
+            transform: translateY(-50%)
+    &__avatar
+        width: 44px
+        height: 44px
+        border-radius: 50%
+        border: 2px solid #C4C4C4
+        outline: none
+        cursor: pointer
+        background: url('../images/photos/avatar.jpg') center (center/cover) no-repeat
+    &__search
+        display: flex
+        margin-right: 26px
+        width: 230px
+        button
+            margin: 0
+            padding: 0
+            border: none
+            background: none
+            cursor: pointer
+            outline: none
+    &__searchbar
+        height: 32px
+        width: 100%
+        position: relative
+        overflow: hidden
+        input
+            border: none
+            background: none
+            outline: none
+            height: 100%
+            width: 100%   
+    &__line   
+        position: absolute
+        height: 100%
+        width: 100%  
+        pointer-events: none
+        transition: transform 0.3 ease
+        overflow: hidden
+        transition: all 0.4s ease
+        transform: translatex(100%)
+        &:after
+            content: ""
+            position: absolute
+            left: 0px
+            bottom: 0px
+            height: 32px
+            width: 100%
+            border-bottom: 1px solid #363740 
+            
+        /** &_active::after
+            transition: transform 0.3 ease
+            transform: translateX(0) **/
+            
+    &__notifications
+            margin: 0
+            padding: 0
+            border: none
+            background: none
+            cursor: pointer
+            outline: none
