@@ -1,0 +1,177 @@
+.tickets
+    margin-top: 30px
+    background: #FFFFFF
+    border: 1px solid #DFE0EB
+    border-radius: 8px
+    padding: 32px 0 23px 0
+    &__list
+        display: flex
+        flex-direction: column
+    &__header
+        display: flex
+        justify-content: space-between
+        padding: 0 32px 0 32px
+    &__title
+        h3
+            font-weight: bold
+            font-size: 19px
+            line-height: 24px
+            letter-spacing: 0.4px
+            color: #252733
+    &__actions
+        width: 145px
+        display: flex
+        justify-content: space-between
+        button
+            border: none
+            outline: none
+            background: none
+            cursor: pointer
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
+            color: #4B506D
+    &__subheader
+        margin-top: 45px
+        display: flex
+        justify-content: space-between
+        padding: 0 32px 10px 32px
+        border-bottom: 1px solid #DFE0EB
+        div
+            text-align: left
+            font-weight: bold
+            font-size: 14px
+            line-height: 18px
+            letter-spacing: 0.2px
+            color: #9FA2B4
+            &:nth-child(1)
+                width: 480px
+            &:nth-child(2)
+                width: 248px
+            &:nth-child(3)
+                width: 180px
+            &:nth-child(4)
+                width: 150px
+    &__ticket
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 32px 0 32px
+        border-bottom: 1px solid #DFE0EB
+        height: 92px
+        transition: 0.2s all ease
+        &:hover
+            background: rgba(55, 82, 255, 0.04) 
+    &__info
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        width: 480px
+    &__topic
+        margin-left: 24px
+    &__photo
+        width: 44px
+        height: 44px
+        border-radius: 50%
+        overflow: hidden
+        position: relative
+        img
+            width: 53px
+            height: auto
+            position: absolute
+            left: -4px
+            top: -2px
+    &__name
+        width: 248px
+    &__date
+        width: 180px
+    &__options
+        display: flex
+        justify-content: space-between
+        width: 150px
+    &__more
+        margin-right: 9px
+    &__topic, &__name, &__date
+        button, a
+            display: block
+            +btn-style-reset
+            padding: 0
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
+            color: #252733
+            text-decoration: none
+        span
+            font-weight: normal
+            font-size: 12px
+            line-height: 16px
+            letter-spacing: 0.1px
+            color: #C5C7CD
+            pointer-events: none
+    &__priority
+        +btn-style-reset
+        height: 24px
+        border-radius: 100px
+        padding: 5px 12px
+        font-weight: bold
+        font-size: 11px
+        line-height: 14px
+        text-align: center
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #FFFFFF
+        &_high
+            background: #F12B2C
+        &_low
+            background: #FEC400
+        &_normal
+            background: #29CC97
+    &__more
+        +btn-style-reset
+    &__settings
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        padding-right: 41px
+        margin-top: 27px
+        label
+            font-weight: normal
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.3px
+            color: #9FA2B4
+    &__slide
+        +btn-style-reset
+        padding: 0
+        &_prev
+            margin-right: 30px
+    &__count
+        margin-right: 33px
+        font-weight: normal;
+        font-size: 14px
+        line-height: 20px
+        text-align: right
+        letter-spacing: 0.3px
+        color: #9FA2B4
+    &__display
+        margin-right: 70px
+        outline: none
+        border: none
+        width: 33px
+        margin-left: 8px
+        appearance: none
+        cursor: pointer
+        background-image: url(../images/icons/page_count.svg) 
+        background-repeat: no-repeat
+        background-position: 50% 6px
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        text-align: right
+        letter-spacing: 0.3px
+        color: #4B506D
+
+
+        

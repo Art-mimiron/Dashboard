@@ -103,6 +103,353 @@
                 </button>
             </section>
 
+            <section class="stats">
+                <div class="stats__frame">
+                    <div class="stats__title">
+                        <div class="stats__header">
+                            <h3>Unresolved tickets</h3>
+                            <button>Group: <span>Support</span></button>
+                        </div>
+                        <div class="stats__detail">
+                            <a href="#">View details</a>
+                        </div>
+                    </div>
+                    <div class="stats__sections">
+                        <div class="stats__section">
+                            <div class="stats__name">
+                                <a href="#">Waiting on Feature Request</a>
+                            </div>
+                            <a href="#">4238</a>
+                        </div>
+                        <div class="stats__section">
+                            <div class="stats__name">
+                                <a href="#">Awaiting Customer Response</a>
+                            </div>
+                            <a href="#">1005</a>
+                        </div>
+                        <div class="stats__section">
+                            <div class="stats__name">
+                                <a href="#">Awaiting Developer Fix</a>
+                            </div>
+                            <a href="#">914</a>
+                        </div>
+                        <div class="stats__section">
+                            <div class="stats__name">
+                                <a href="#">Pending</a>
+                            </div>
+                            <a href="#">281</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats__frame">
+                    <div class="stats__title">
+                        <div class="stats__header">
+                            <h3>Tasks</h3>
+                            <button>Today</button>
+                        </div>
+                        <div class="stats__detail">
+                            <a href="#">View all</a>
+                        </div>
+                    </div>
+                    <div class="stats__sections">
+                        <div class="stats__section">
+                            <form action="#" class="stats__new-task">
+                                <input type="text" placeholder="Create new task">
+                                <button type="submit"></button>
+                            </form>
+                        </div>
+                        <div class="stats__section">
+                            <label class="stats__task">Finish ticket update
+                                <input type="checkbox" name="taskName" id="1taskName">
+                                <span class="stats__checkmark"></span>
+                            </label>
+                            <button name="taskStatus" class="stats__status stats__status_urgent">URGENT</button>
+                        </div>
+                        <div class="stats__section">
+                            <label class="stats__task">Create new ticket example
+                                <input type="checkbox" name="taskName" id="1taskName">
+                                <span class="stats__checkmark"></span>
+                            </label>
+                            <button name="taskStatus" class="stats__status stats__status_new">NEW</button>
+                        </div>
+                        <div class="stats__section">
+                            <label class="stats__task">Update ticket report
+                                <input type="checkbox" name="taskName" id="1taskName">
+                                <span class="stats__checkmark"></span>
+                            </label>
+                            <button name="taskStatus" class="stats__status stats__status_default">DEFAULT</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tickets">
+                <div class="tickets__header">
+                    <div class="tickets__title"><h3>All tickets</h3></div>
+                    <div class="tickets__actions">
+                        <button>
+                            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.128568 2.26839L2.31563 0.125478C2.48647 -0.0418526 2.7636 -0.0417991 2.93434 0.125478L5.12132 2.26839C5.39667 2.53812 5.20059 3.00001 4.81195 3.00001H3.5V11.5714C3.5 11.8081 3.30414 12 3.0625 12H2.1875C1.94586 12 1.75 11.8081 1.75 11.5714V3.00001H0.437935C0.0485329 3.00001 -0.146209 2.53758 0.128568 2.26839ZM6.5625 1.7143H13.5625C13.8041 1.7143 14 1.52243 14 1.28573V0.428584C14 0.191879 13.8041 1.34454e-05 13.5625 1.34454e-05H6.5625C6.32086 1.34454e-05 6.125 0.191879 6.125 0.428584V1.28573C6.125 1.52243 6.32086 1.7143 6.5625 1.7143ZM6.125 4.71429V3.85715C6.125 3.62045 6.32086 3.42858 6.5625 3.42858H11.8125C12.0541 3.42858 12.25 3.62045 12.25 3.85715V4.71429C12.25 4.951 12.0541 5.14287 11.8125 5.14287H6.5625C6.32086 5.14287 6.125 4.951 6.125 4.71429ZM6.125 11.5714V10.7143C6.125 10.4776 6.32086 10.2857 6.5625 10.2857H8.3125C8.55414 10.2857 8.75 10.4776 8.75 10.7143V11.5714C8.75 11.8081 8.55414 12 8.3125 12H6.5625C6.32086 12 6.125 11.8081 6.125 11.5714ZM6.125 8.14286V7.28572C6.125 7.04901 6.32086 6.85715 6.5625 6.85715H10.0625C10.3041 6.85715 10.5 7.04901 10.5 7.28572V8.14286C10.5 8.37957 10.3041 8.57143 10.0625 8.57143H6.5625C6.32086 8.57143 6.125 8.37957 6.125 8.14286Z" fill="#C5C7CD"/>
+                            </svg>
+                            Sort
+                        </button>
+                        <button>
+                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.4369 0H0.563154C0.0635131 0 -0.188604 0.606234 0.165419 0.960258L4.5 5.29549V10.125C4.5 10.3085 4.58955 10.4805 4.73993 10.5858L6.61493 11.8979C6.98484 12.1568 7.5 11.8944 7.5 11.437V5.29549L11.8347 0.960258C12.188 0.606937 11.9376 0 11.4369 0Z" fill="#C5C7CD"/>
+                            </svg>
+                            Filter
+                        </button>
+                    </div>
+                </div>
+                <div class="tickets__subheader">
+                    <div>Ticket details</div>
+                    <div>Customer name</div>
+                    <div>Date</div>
+                    <div>Priority</div>
+                </div>
+
+
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/1.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">Contact Email not Linked</a>
+                            <span>Updated 1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Tom Cruise</button>
+                        <span>on 24.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 26, 2019</button>
+                        <span>6:30 PM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_high">high</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/2.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">Adding Images to Featured Posts</a>
+                            <span>Updated 1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Matt Damon</button>
+                        <span>on 24.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 26, 2019</button>
+                        <span>8:00 AM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_low">low</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/3.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">When will I be charged this month?</a>
+                            <span>Updated 1 day ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Robert Downey</button>
+                        <span>on 24.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 26, 2019</button>
+                        <span>7:30 PM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_high">high</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>    
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/4.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">Payment not going through</a>
+                            <span>Updated 2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Christian Bale</button>
+                        <span>on 24.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 25, 2019</button>
+                        <span>5:00 PM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_normal">normal</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/5.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">Unable to add replies</a>
+                            <span>Updated 2 days ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Henry Cavil</button>
+                        <span>on 24.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 25, 2019</button>
+                        <span>4:00 PM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_high">high</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/6.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">Downtime since last week</a>
+                            <span>Updated 3 days ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Chris Evans</button>
+                        <span>on 23.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 25, 2019</button>
+                        <span>2:00 PM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_normal">normal</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/7.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">Referral Bonus</a>
+                            <span>Updated 4 day ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Sam Smith</button>
+                        <span>on 22.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 25, 2019</button>
+                        <span>11:30 AM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_low">low</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+                <div class="tickets__ticket">
+                    <div class="tickets__info">
+                        <div class="tickets__photo">
+                            <img src="images/photos/8.png" alt="photo">
+                        </div>
+                        <div class="tickets__topic">
+                            <a href="#">How do I change my password?</a>
+                            <span>Updated 6 day ago</span>
+                        </div>
+                    </div>
+                    <div class="tickets__name">
+                        <button>Steve Rogers</button>
+                        <span>on 21.05.2019</span>
+                    </div>
+                    <div class="tickets__date">
+                        <button>May 24, 2019</button>
+                        <span>1:00 PM</span>
+                    </div>
+                    <div class="tickets__options">
+                        <button class="tickets__priority tickets__priority_normal">normal</button>
+                        <button class="tickets__more">
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 4C3.1 4 4 3.1 4 2C4 0.9 3.1 0 2 0C0.9 0 0 0.9 0 2C0 3.1 0.9 4 2 4ZM2 6C0.9 6 0 6.9 0 8C0 9.1 0.9 10 2 10C3.1 10 4 9.1 4 8C4 6.9 3.1 6 2 6ZM2 12C0.9 12 0 12.9 0 14C0 15.1 0.9 16 2 16C3.1 16 4 15.1 4 14C4 12.9 3.1 12 2 12Z" fill="#C5C7CD"/>
+                        </svg>
+                    </button>
+                    </div>
+                </div>
+
+                <div class="tickets__settings">
+                    <label for="ticketsDisplay">Rows per page:</label>
+                    <select name="ticketsDisplay" id="ticketsDisplay" class="tickets__display">
+                        <option value="">8</option>
+                        <option value="">4</option>
+                    </select>
+                    <div class="tickets__count">
+                        <span>1-8 of 1240</span>
+                    </div>
+                    <button class="tickets__slide tickets__slide_prev">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L1.07071 7.07071C1.03166 7.03166 1.03166 6.96834 1.07071 6.92929L7 1" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="tickets__slide tickets__slide_next">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 13L6.92929 7.07071C6.96834 7.03166 6.96834 6.96834 6.92929 6.92929L1 1" stroke="#9FA2B4" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
 </body>

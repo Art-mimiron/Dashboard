@@ -1,0 +1,167 @@
+.stats
+    margin-top: 28px
+    display: flex
+    justify-content: space-between
+    &__frame
+        width: 546px
+        height: 336px
+        padding: 32px 0 26px 0
+        background: #FFFFFF
+        border: 1px solid #DFE0EB
+        border-radius: 8px
+    &__title
+        display: flex
+        justify-content: space-between
+        padding: 0 32px 
+    &__header
+        h3
+            font-weight: bold
+            font-size: 19px
+            line-height: 24px
+            letter-spacing: 0.4px
+            color: #252733
+        button
+            border: none
+            outline: none
+            background: none
+            padding: 0
+            margin-top: 8px
+            font-weight: 600
+            font-size: 12px
+            line-height: 16px
+            letter-spacing: 0.1px
+            color: #9FA2B4
+            cursor: pointer
+            span
+                font-size: 12px
+                line-height: 16px
+                letter-spacing: 0.1px
+                color: #252733
+    &__detail
+        margin-top: 4px
+        a
+            text-decoration: none
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
+            color: #3751FF
+    &__sections
+        margin-top: 16px
+    &__section
+        display: flex
+        justify-content: space-between
+        height: 58px
+        align-items: center
+        padding: 0 32px 
+        border-bottom: 1px solid #DFE0EB
+        &:last-child
+            border: none
+        a
+            text-decoration: none
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
+            color: #9FA2B4
+    &__name
+        a
+            font-weight: 600
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.2px
+            color: #252733
+    &__new-task
+        display: flex
+        justify-content: space-between
+        width: 100%
+        input
+            width: 336px
+            height: 20
+            border: none
+            outline: none
+        button
+            display: block
+            position: relative
+            background: #F0F1F7
+            border-radius: 8px
+            outline: none
+            cursor: pointer
+            border: none
+            width: 24px
+            height: 24px
+            &::after
+                content: ''
+                position: absolute
+                height: 10px
+                width: 2px
+                background-color: #9FA2B4
+                top: 7px
+                left: 11px
+                border-radius: 5px
+            &::before
+                content: ''
+                position: absolute
+                width: 10px
+                height: 2px
+                background-color: #9FA2B4
+                left: 7px
+                top: 11px
+                border-radius: 5px
+    &__task
+        cursor: pointer
+        position: relative
+        user-select: none
+        padding-left: 36px
+        input
+            position: absolute
+            opacity: 0
+            cursor: pointer
+            height: 0
+            width: 0
+            &:checked ~ .stats__checkmark
+                background-color: #3751FF
+                border-color: #3751FF
+            
+    &__checkmark
+        position: absolute
+        top: -2px
+        left: 0
+        height: 20px
+        width: 20px
+        background-color: #ffffff
+        border: 2px solid #C5C7CD
+        border-radius: 50%
+        transition: 0.2s all
+        &:after
+            content: ""
+            position: absolute
+            left: 6px
+            top: 2px
+            width: 5px
+            height: 11px
+            border: solid white
+            border-width: 0 2px 2px 0
+            border-radius: 1px
+            transform: rotate(45deg)
+    &__status
+        border-radius: 8px
+        border: none
+        background: none
+        outline: none
+        cursor: pointer
+        height: 24px
+        padding: 5px 12px
+        font-weight: bold
+        font-size: 11px
+        line-height: 14px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+        color: #ffffff
+        &_urgent
+            background: #FEC400
+        &_new
+            background: #29CC97
+        &_default
+            background: #F0F1F7
+            color: #9FA2B4
