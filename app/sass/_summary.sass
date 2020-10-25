@@ -1,11 +1,10 @@
-.stats
+.summary
     margin-top: 28px
     display: flex
     justify-content: space-between
-    &__frame
+    &__unresolved, &__tasks
         width: 546px
-        height: 336px
-        padding: 32px 0 26px 0
+        padding: 32px 0 6px 0
         background: #FFFFFF
         border: 1px solid #DFE0EB
         border-radius: 8px
@@ -13,6 +12,7 @@
         display: flex
         justify-content: space-between
         padding: 0 32px 
+        margin-bottom: 16px
     &__header
         h3
             font-weight: bold
@@ -46,9 +46,10 @@
             line-height: 20px
             letter-spacing: 0.2px
             color: #3751FF
-    &__sections
-        margin-top: 16px
-    &__section
+    &__unresolved-list, &__tasks-list
+        padding: 0
+        margin: 0
+    &__task, &__unresolved-item, &__task-create
         display: flex
         justify-content: space-between
         height: 58px
@@ -71,7 +72,7 @@
             line-height: 20px
             letter-spacing: 0.2px
             color: #252733
-    &__new-task
+    &__task-create
         display: flex
         justify-content: space-between
         width: 100%
@@ -108,7 +109,7 @@
                 left: 7px
                 top: 11px
                 border-radius: 5px
-    &__task
+    &__task-name
         cursor: pointer
         position: relative
         user-select: none
@@ -119,10 +120,10 @@
             cursor: pointer
             height: 0
             width: 0
-            &:checked ~ .stats__checkmark
+            &:checked ~ .summary__checkmark
                 background-color: #3751FF
                 border-color: #3751FF
-            
+                
     &__checkmark
         position: absolute
         top: -2px
