@@ -89,29 +89,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   };
 
-  /* const removingTask = function() {
-    taskItem[index].remove();
-    tasksDB.splice(index, 1);
-    tasksDB.sort();
-  } */
 
-  /* const removeTask = function() {
+  const removeTask = function() {
     let taskRemove = document.querySelectorAll('#taskName');
 
     taskRemove.forEach((item, index) => {
       item.addEventListener('click', function() {
-        taskItem[index].style.opacity ='0';
-        taskItem[index].remove();
-        tasksDB.splice(index, 1);
-        tasksDB.sort();
+        setTimeout(()=> {
+          taskItem[index].remove();
+          tasksDB.splice(index, 1);
+          tasksDB.sort();
+        },300);
       });
     });
   };
-   */
+  
   
 
   addTask();
- /*  removeTask(); */
+  removeTask();
   let taskItem = document.querySelectorAll('.summary__task');
 
 
@@ -129,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function() {
       addTask();
       taskItem = document.querySelectorAll('.summary__task');
     }
-    /* removeTask(); */
+    removeTask();
   });
  
 
