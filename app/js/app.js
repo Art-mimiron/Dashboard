@@ -53,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function() {
     status: 'urgent'}
   ];
 
-/* tasksDB.reverse(); */
-
   const form = document.querySelector('.summary__task-create'),
         input = form.querySelector('input'),
         taskList = document.querySelector('.summary__tasks-list');
@@ -98,7 +96,6 @@ document.addEventListener("DOMContentLoaded", function() {
         setTimeout(()=> {
           taskItem[index].remove();
           tasksDB.splice(index, 1);
-          tasksDB.sort();
         },300);
       });
     });
@@ -109,7 +106,6 @@ document.addEventListener("DOMContentLoaded", function() {
   addTask();
   removeTask();
   let taskItem = document.querySelectorAll('.summary__task');
-
 
   form.addEventListener('submit', (e)=> {
     e.preventDefault();
@@ -123,7 +119,9 @@ document.addEventListener("DOMContentLoaded", function() {
       if (tasksDB.length == 4) {tasksDB.splice(0, 1);}
       e.target.reset();
       addTask();
+      tasksDB.sort();
       taskItem = document.querySelectorAll('.summary__task');
+      
     }
     removeTask();
   });
